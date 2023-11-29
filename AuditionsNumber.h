@@ -3,8 +3,10 @@
 // количество прослушиваний
 class AuditionsNumber
 {
+private:
 	int count;
 
+public:
 	AuditionsNumber(int count = 0);
 
 	void setCount(int count);

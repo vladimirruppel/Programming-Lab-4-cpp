@@ -5,6 +5,7 @@
 #include <limits>
 #define NOMINMAX
 #include <Windows.h>
+#include "AuditionsNumber.h"
 #include "AudioFile.h"
 #include "Playlist.h"
 #include "AudioPlayer.h"
@@ -34,6 +35,11 @@ int main()
     pl1 = pl1 + af2;
     pl1.output(false);
     puts("");
+
+    AuditionsNumber an{};
+    std::cout << "Количество прослушиваний: " << an.getCount() << std::endl;
+    an++;
+    std::cout << "Количество прослушиваний: " << an.getCount() << std::endl;
 
     // меню
     int quit = 0;
