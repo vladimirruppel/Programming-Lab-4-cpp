@@ -33,6 +33,9 @@
     <ClCompile Include="MusicLibrary.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="AuditionsNumber.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioFile.h">
@@ -48,6 +51,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="MusicLibrary.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="AuditionsNumber.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

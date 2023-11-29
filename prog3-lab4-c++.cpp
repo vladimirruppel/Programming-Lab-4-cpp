@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿#pragma once
+#include <iostream>
 #include <vector>
 #include <string>
 #include <limits>
@@ -23,8 +24,16 @@ int main()
 
     AudioFile* af1 = new AudioFile("file1.mp3", "Kanye West", "Ni**as in Paris", 203, 2011);
     printf("Всего треков: %d\n", AudioFile::getTotalAudioFiles());
+    puts("");
 
     printAudioFileInfo(*af1);
+    puts("");
+
+    Playlist pl1("new playlist");
+    AudioFile af2("file2.mp3", "ALBLAK 52", "Thank's God", 121, 2023);
+    pl1 = pl1 + af2;
+    pl1.output(false);
+    puts("");
 
     // меню
     int quit = 0;

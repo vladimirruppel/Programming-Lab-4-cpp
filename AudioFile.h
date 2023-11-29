@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "AuditionsNumber.h"
 
 class AudioFile;
 void printAudioFileInfo(const AudioFile& audioFile);
@@ -11,6 +12,8 @@ private:
     std::string trackName;
     int duration;
     int releaseYear;
+
+    AuditionsNumber auditionsNumber;
 
     static int totalAudioFiles;
 public:

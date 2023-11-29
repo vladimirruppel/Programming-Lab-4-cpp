@@ -1,5 +1,10 @@
 #include "Playlist.h"
 
+Playlist::Playlist(const std::string& playlistName)
+{
+    this->playlistName = playlistName;
+}
+
 Playlist::Playlist(const std::string& playlistName, std::vector<AudioFile> list)
 {
     this->playlistName = playlistName;
@@ -47,4 +52,12 @@ AudioFile& Playlist::getElement(int index)
 void Playlist::setPlaylistName(const std::string& newPlaylistName)
 {
     playlistName = newPlaylistName;
+}
+
+// возвращается новый плейлист, где по сравнению со старым будет добавлен приплюсованный трек
+Playlist Playlist::operator+(const AudioFile& track) const
+{
+    Playlist result = *this;
+    result.add(track);
+    return result;
 }

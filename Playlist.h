@@ -8,6 +8,7 @@ private:
     std::string playlistName;
     std::vector<AudioFile> list;
 public:
+    Playlist(const std::string& playlistName);
     Playlist(const std::string& playlistName, std::vector<AudioFile> list);
 
     void output(bool isLong = true);
@@ -19,4 +20,6 @@ public:
     AudioFile& getElement(int index);
 
     void setPlaylistName(const std::string& newPlaylistName);
+
+    Playlist operator+(const AudioFile& audio) const; // добавление трека в плейлист с помощью "+"
 };

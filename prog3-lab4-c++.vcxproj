@@ -130,6 +130,7 @@
     <ClCompile Include="AudioCollection.cpp" />
     <ClCompile Include="AudioFile.cpp" />
     <ClCompile Include="AudioPlayer.cpp" />
+    <ClCompile Include="AuditionsNumber.cpp" />
     <ClCompile Include="MusicLibrary.cpp" />
     <ClCompile Include="Playlist.cpp" />
     <ClCompile Include="prog3-lab4-c++.cpp" />
@@ -138,6 +139,7 @@
     <ClInclude Include="AudioCollection.h" />
     <ClInclude Include="AudioFile.h" />
     <ClInclude Include="AudioPlayer.h" />
+    <ClInclude Include="AuditionsNumber.h" />
     <ClInclude Include="MusicLibrary.h" />
     <ClInclude Include="Playlist.h" />
   </ItemGroup>
